@@ -1,0 +1,20 @@
+
+{
+
+  "description": "Auto opens an affiliate link to enable all amazon purchases to benifit source",
+  "manifest_version": 2,
+  "name": "Affil",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["affil.js"]
+    }
+  ]
+
+}
